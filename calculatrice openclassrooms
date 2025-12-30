@@ -1,0 +1,74 @@
+
+def calculator():
+
+
+    limit_code=1
+
+    while limit_code < 4:
+         
+
+        nombre1=input("enter first integer: ")
+        nombre2=input("enter a second integer: ")
+        print(f"{nombre2.isnumeric()},{nombre1.isnumeric()}")
+
+        if nombre1.isnumeric() and nombre2.isnumeric():
+            print('nombre1 and nombre2 are numeric')
+
+        if not (nombre1.isnumeric() and nombre2.isnumeric()):
+
+            raise SystemExit("fin du programme")
+            
+        else:
+                
+                
+            nombre1=int(nombre1)
+            nombre2=int(nombre2)
+            print(nombre1,nombre2)
+                
+            operation = input("enter your operation : ")
+
+            if operation == 'yes' and nombre2 != 0:
+               
+                
+                    choices=int(input("enter your choice: "))
+                    choice1 = nombre1 + nombre2
+                    choice2 = nombre1 - nombre2
+                    choice3 = nombre1 * nombre2  
+                    choice4 =nombre1 / nombre2
+    
+                    if choices==1:
+                        resultat=choice1
+                        print("the solution is: ",resultat)
+
+                    elif choices==2:
+                        resultat=choice2
+                        print("the solution is: ",resultat)
+                
+                    elif choices==3 or choices==4:
+                        resultat=[choice3,choice4] 
+
+                        for choix in resultat:
+                            print(f"the solution is: {round(choix)}  "  )
+                         
+                    else:
+                        raise SystemExit("your operation isn't in our system")
+     
+            else:
+               raise SystemExit("your operation can't be execute")   
+                
+                
+                
+                  
+
+                  
+            
+
+
+
+
+
+                
+if __name__=="__main__":
+    calculator()
+
+        

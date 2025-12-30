@@ -1,0 +1,22 @@
+
+joebking="       je suis_le_fort de_l'ecole         "
+
+joebking.replace("le","le plus")
+
+print(joebking)
+
+print(joebking.rstrip())
+
+print(joebking.split("_"))
+
+jack=["le plus fort","le plus cool"]
+
+print(" ".join(jack))
+
+
+
+
+
+
+
+

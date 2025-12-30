@@ -1,0 +1,10 @@
+
+ma_liste=[10,9,5,95,88,46]
+
+print(ma_liste)
+
+schims =int(input("entrer un votre age : "))
+
+ma_liste.insert(3,schims)
+print(ma_liste)
+

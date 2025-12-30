@@ -1,0 +1,47 @@
+def choix_de_liste():
+  
+  
+  print("choix_1: ordinateur en ventes")
+  
+  print("choix_2: platformes sociaux")
+  print("choix_3: dechifrage de mots")
+
+  print('hello everyone')
+
+  while True:
+        
+          
+  
+       
+       choice=int(input("entrer your choice: "))
+
+              
+       ordinateur_existant=["corei 7","corei 9","corei 5","corei 3"]
+       platformes_sociaux=["instagram","openclassrooms","cursa","linkdin"]
+       mot="FOCUS"
+       
+       platformes_sociaux.append("tiktok")
+       platformes_sociaux.remove("instagram")
+       ordinateur_existant.insert(1,"intel")
+       len(ordinateur_existant)
+       if choice==1:
+              
+              print("les ordi sont: ",ordinateur_existant)
+              
+              print( len(ordinateur_existant))
+       elif choice==2:
+              
+              print("les platformes sociaux fonctionnelles et utilisable sont: " ,platformes_sociaux)
+
+              
+       else:
+              
+              print(mot[2:5])
+
+
+
+if __name__ == "__main__":
+  choix_de_liste()
+
+
+    

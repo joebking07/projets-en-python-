@@ -1,0 +1,70 @@
+from math import factorial
+
+def calculator() :
+        print("Bienvenue dans le calculateur")  
+        print("hello")
+        
+        
+
+        while True:
+           print("1-addition ")
+           print("2-soustraction")
+           print("3-multiplication")
+           print("4-division ")
+           print("5-factoriel")
+         
+           choix= int(input ("\n faite votre choix ici: "))
+
+           if choix in [1,2,3,4]:
+              
+              nombreI= float(input(' entrez votre premier nombre: '))
+              nombreII=float(input('entrer the second numbers: '))
+    
+          
+              if choix==1:
+                  
+                result=nombreI+nombreII
+
+              
+              elif choix ==2:
+        
+                result=nombreI-nombreII
+
+              elif choix==3:
+                
+                result=nombreI*nombreII
+            
+              elif choix==4:
+                
+                result=nombreI/nombreII
+
+                if nombreII==0:
+                    print("Erreur:ladivision par 0 est impossible")
+          
+                    continue
+           
+           elif choix==5:
+               
+               try:
+                  
+                  nombre=int(input("entrez un nombre entier pour le factoriel :  "))
+
+               except ValueError:  
+                
+                    print('veuillez entrez un nombre entier')
+                    continue
+               
+               if nombre<0:
+                    print("resayer les factoriel ne prennent pas en compte les nombre négatifs")
+
+                    continue
+           
+           result=factorial(nombre)
+           
+           print("le résultat de votre calcul est:",result)        
+                      
+            
+if __name__=="__main__":
+  calculator()
+
+ 

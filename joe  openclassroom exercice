@@ -1,0 +1,53 @@
+campagne = {}
+
+campagne ["nom"]="je suis beau dans mon commplet"
+
+print(campagne)
+
+ma_liste=["enter","josias","bro","claude","jesi","larys","gaeel","birah" ]
+
+print(ma_liste[2:5])
+
+ma_liste.append("joe")
+
+ma_liste.sort()
+
+print (ma_liste )
+
+del ma_liste[2:5]
+
+print(ma_liste)
+taux_de_conversion={}
+taux_de_conversion['instagram']=3.4
+taux_de_conversion['youtube']=3.6
+
+print(taux_de_conversion)
+
+
+la_fouille= dict()
+
+la_fouille['le detectif']="nom"
+
+la_fouille['le suspect potentiel']="nom"
+
+print(la_fouille)
+
+print(la_fouille.keys ())
+
+del la_fouille['le detectif']
+
+print(taux_de_conversion.values())
+
+print(taux_de_conversion.items())
+
+print('le suspect potentiel'in la_fouille)
+
+print(la_fouille)
+
+
+
+
+
+
+
+

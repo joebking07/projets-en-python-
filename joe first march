@@ -1,0 +1,24 @@
+
+def main(): 
+    
+    #creation de variable'username'
+    
+    username = input('entrer your username')
+    
+    print(' hello',username)
+    
+    age = int(input('enter your age'))
+
+
+    print('salut' , username ,'vous avez', int(age) , 'ans!' )
+
+
+if __name__=='__main__':
+   
+    main()
+
+
+
+
+
+

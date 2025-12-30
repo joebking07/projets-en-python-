@@ -1,0 +1,64 @@
+
+#la boucle for 
+#l'objectif est de faire une boucle qui va gerer des numéros clients
+
+
+for i in range (10):
+
+
+ print(f"l'affichage de iju: {i**3}".format(i))
+
+
+
+#for each
+
+emails =["agbessijoe@mail.com","joebking@gmail.com","bossbjoe@gmail.com"]
+
+for mes_identifients in emails:
+  print("email envoyer à :",mes_identifients)
+
+
+
+
+
+mes_compétences ={"systeme embarquer":"langage c et rugby",
+                  "dev web":"back end(python,java,c#,rugby) & front end(html,css,javascript&frameworks)",
+                  "application mobile":"react native,collins,flutteur,python",
+                  "game building":"godo,unreal engine,unity",
+                  "IA":" tensor flow,...",
+                  }
+mes_startups={"startup 1":"joebking07",
+              "startup 2":"joeofod"}
+
+mes_comptes={}
+
+mes_comptes["banque mondial"]="Amérique"
+mes_comptes["banque africaine"]="Afrique"
+mes_comptes["banque en Suisse"]="Europe"
+
+
+mes_suites= dict()
+
+mes_suites["villa"]="Suisse"
+
+mes_suites["maison"]="dans les Caraibes"
+
+mes_suites["villa de luxe"]="au Togo"
+
+
+mon_identité_de_milionnaire=[]
+
+mon_identité_de_milionnaire.append(mes_compétences)
+
+mon_identité_de_milionnaire.append(mes_startups)
+
+mon_identité_de_milionnaire.append(mes_suites)
+
+mon_identité_de_milionnaire.append (mes_comptes)
+
+print(mon_identité_de_milionnaire)
+
+
+for identités in mon_identité_de_milionnaire:
+
+  print("\n ce sera mon identite de milionnaire: ",identités) 

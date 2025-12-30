@@ -1,0 +1,43 @@
+#place de cinema
+
+age=int(input('quelle est votre age?: '))
+prix_majeur = 12
+prix_mineur = 7
+
+if age <18:
+    
+  try:
+    print(' vous etes mineur\n vous devez payer 7€')
+  
+    prix = int(input("entrez 7: "))
+  
+  except ValueError: 
+
+        print("recommencer s'il vous plait ")
+
+        
+
+else:
+    
+    print('vous etes majeur\n vous devez payer 12€: ')
+    
+    prix= int(input("entrez 12: "))
+
+
+print('voulez-vous du pop corn ?')
+
+choix_pop_corn =input("entrez oui/non si vous en voulez ou pas : ")
+
+
+if choix_pop_corn =="oui":
+
+   prix+=5
+
+   print("vous pouvez entrer dans la salle video")
+   
+else:
+
+    print("vous pouvez entrer dans la salle video")
+
+
+print(f"votre achat total est de : {prix}€")    

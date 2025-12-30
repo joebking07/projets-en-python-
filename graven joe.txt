@@ -1,0 +1,34 @@
+def achat():
+
+    #la valeur du porte_monnaie       
+    while True:
+      try: 
+        porte_monnaie = float(input('entrez le solde de votre porte monnaie: '))
+      except ValueError:
+         print("error")
+         continue
+      if porte_monnaie:
+         break
+  
+    print('votre solde est:',porte_monnaie)
+
+    while True:
+        print(' cliqué sur entrez pour acheté une pomme ')
+    
+        if porte_monnaie >= 50:
+         
+         pomme = 50 
+    
+        depot= float(input('déposer votre argent ici:'))    
+  
+           
+        result = depot - pomme
+
+        print('vous avez acheté une pomme et votre monnaie à prendre est:',result)
+
+
+if __name__ == "__main__" :
+  achat() 
+
+
+

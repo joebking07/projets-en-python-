@@ -1,0 +1,16 @@
+alphabet='abcdefghijklmnopqrstuvwxyz'
+shift=5
+
+print(alphabet)
+
+shift_alphabet=alphabet[shift:] + alphabet[:shift]
+
+print(shift_alphabet)
+
+
+
+
+    
+
+
+

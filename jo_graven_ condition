@@ -1,0 +1,37 @@
+def choix_voitures():
+    
+    while True:
+        
+        voitures =["rolls roys","mercedes","lamborgini","macklaren"]
+
+        
+        choices=int(input("enter your choices: "))
+
+        match choices:
+            
+            case 1:
+                
+                print("le choix de votre voiture est",voitures [0])
+
+            case 2:
+                
+                print("le choix de votre voiture est",voitures[1])
+
+            case 3:
+                
+                print("le choix de votre voiture est",voitures[2])
+
+            case 4:
+                print("your favorite car is", voitures[3])
+
+
+            case _:
+
+                print("i don't know whitch car is it") 
+
+
+if __name__=="__main__":
+    choix_voitures() 
+
+
+        
