@@ -47,27 +47,9 @@ def calculator():
                     elif choices==3 or choices==4:
                         resultat=[choice3,choice4] 
 
-                        for choix in resultat:
-                            print(f"the solution is: {round(choix)}  "  )
-                         
-                    else:
-                        raise SystemExit("your operation isn't in our system")
-     
-            else:
-               raise SystemExit("your operation can't be execute")   
-                
-                
-                
-                  
-
-                  
-            
+                        raise SystemExit("your operation can't be execute")
 
 
-
-
-
-                
 if __name__=="__main__":
     calculator()
 
